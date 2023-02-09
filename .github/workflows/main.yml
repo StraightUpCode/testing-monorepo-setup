@@ -20,7 +20,7 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
           git config user.email "gituser@example.com"
-      - run: yarn install --immutable --immutable-cache --check-cache
+      - run: yarn install --immutable --immutable-cache 
       - name: Version
         shell: bash
         run: yarn nx affected --base=main --target=version
@@ -35,7 +35,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
-      - run: yarn install --immutable --immutable-cache --check-cache
+      - run: yarn install --immutable --immutable-cache 
       - run: npx nx workspace-lint
       - run: npx nx format:check
       - run: npx nx affected --target=lint --parallel=3
