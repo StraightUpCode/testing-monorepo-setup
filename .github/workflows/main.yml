@@ -20,7 +20,7 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
           git config user.email "gituser@example.com"
-      - run: yarn install --inmutable
+      - run: yarn install --immutable --immutable-cache --check-cache
       - name: Version
         shell: bash
         run: yarn nx affected --base=main --target=version
