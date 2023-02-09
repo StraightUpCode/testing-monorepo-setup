@@ -31,7 +31,7 @@ jobs:
         run: |
           git tag -f last-release
           git push origin main --force
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
