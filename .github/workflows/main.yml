@@ -29,7 +29,7 @@ jobs:
       - name: Tag Main
         shell: bash
         run: |
-          git tag -f main
+          git tag -f last-release
           git push origin main --force
       - uses: actions/checkout@v2
         with:
