@@ -7,7 +7,6 @@ tmp
 
 # dependencies
 node_modules
-.yarn/cache
 
 # IDEs and editors
 /.idea
