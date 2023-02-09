@@ -5,6 +5,9 @@ on:
       - main
   pull_request:
 
+env:
+  HUSKY: 0
+
 jobs:
   main:
     runs-on: ubuntu-latest
