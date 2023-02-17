@@ -1,3 +1,3 @@
-export function secondLib(): string {
-  return 'second-lib new version 2';
+export function secondLib(): number {
+  return 2;
 }
