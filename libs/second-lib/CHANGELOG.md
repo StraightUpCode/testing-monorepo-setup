@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [1.0.1](https://github.com/StraightUpCode/testing-monorepo-setup/compare/second-lib-1.0.0...second-lib-1.0.1) (2023-02-17)
+
+
+### Bug Fixes
+
+* **second-lib:** fixed return value ([3218ff9](https://github.com/StraightUpCode/testing-monorepo-setup/commit/3218ff908731b1bc419daf49f3ac92d3f841b9c5))
+
 ## [1.0.0](https://github.com/StraightUpCode/testing-monorepo-setup/compare/second-lib-0.1.0...second-lib-1.0.0) (2023-02-17)
 
 
