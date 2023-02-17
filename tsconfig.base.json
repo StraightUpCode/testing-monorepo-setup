@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@testrepo/my-lib": ["libs/my-lib/src/index.ts"]
+      "@testrepo/my-lib": ["libs/my-lib/src/index.ts"],
+      "@testrepo/second-lib": ["libs/second-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
