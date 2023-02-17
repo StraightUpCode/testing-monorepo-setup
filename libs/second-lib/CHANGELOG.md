@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.0](https://github.com/StraightUpCode/testing-monorepo-setup/compare/second-lib-0.1.0...second-lib-1.0.0) (2023-02-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **second-lib:** Second Lib function now return a 2
+
+### Features
+
+* **second-lib:** changes in how the lib works ([f98e87d](https://github.com/StraightUpCode/testing-monorepo-setup/commit/f98e87d767b28dc29c676026a6280f5bfec2fbd1))
+
 ## 0.1.0 (2023-02-17)
 
 
