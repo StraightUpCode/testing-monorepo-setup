@@ -1,3 +1,3 @@
 export function secondLib(): number {
-  return 2;
+  return 3;
 }
