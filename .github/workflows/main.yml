@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           git tag -f last-release
-          git push origin main --force
+          git push origin --tags
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
