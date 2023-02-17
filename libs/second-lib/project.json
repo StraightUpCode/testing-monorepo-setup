@@ -6,27 +6,44 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/second-lib",
         "main": "libs/second-lib/src/index.ts",
         "tsConfig": "libs/second-lib/tsconfig.lib.json",
-        "assets": ["libs/second-lib/*.md"]
+        "assets": [
+          "libs/second-lib/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/second-lib/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/second-lib/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/libs/second-lib"],
+      "outputs": [
+        "coverage/libs/second-lib"
+      ],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/libs/second-lib"
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "tagPrefix": "${projectName}@",
+      "options": {
+        "preset": "conventional"
       }
     }
   },
