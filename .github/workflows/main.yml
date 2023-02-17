@@ -27,7 +27,7 @@ jobs:
       - run: yarn install --immutable 
       - name: Version
         shell: bash
-        run: yarn nx affected --target=version
+        run: yarn nx affected --target=version --parallel=1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Tag Main
